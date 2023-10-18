@@ -5,6 +5,7 @@
  * @file_path: The file path.
  * Return: void
  */
+
 void open_file(char *file_path)
 {
 	FILE *file_descriptor = fopen(file_path, "r");
@@ -21,6 +22,7 @@ void open_file(char *file_path)
  * @file_descriptor: Pointer to file descriptor.
  * Return: void
  */
+
 void read_file(FILE *file_descriptor)
 {
 	int line_number, format = 0;
@@ -43,6 +45,7 @@ void read_file(FILE *file_descriptor)
  *           If 1, nodes will be entered as a queue.
  * Return: Returns 0 if the opcode is stack, 1 if queue.
  */
+
 int parse_line(char *buffer, int line_number, int format)
 {
 	char *opcode, *value;
